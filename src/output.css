@@ -864,3 +864,67 @@ video {
 .manrope{
   font-family: "Manrope", sans-serif;
 }
+
+@media not all and (min-width: 1024px) {
+  .max-lg\:flex {
+    display: flex;
+  }
+
+  .max-lg\:w-full {
+    width: 100%;
+  }
+
+  .max-lg\:flex-col {
+    flex-direction: column;
+  }
+}
+
+@media not all and (min-width: 768px) {
+  .max-md\:w-full {
+    width: 100%;
+  }
+
+  .max-md\:w-auto {
+    width: auto;
+  }
+
+  .max-md\:max-w-\[\] {
+    max-width: ;
+  }
+
+  .max-md\:max-w-\[500\] {
+    max-width: 500;
+  }
+
+  .max-md\:max-w-\[500px\] {
+    max-width: 500px;
+  }
+
+  .max-md\:max-w-\[550px\] {
+    max-width: 550px;
+  }
+
+  .max-md\:max-w-\[300px\] {
+    max-width: 300px;
+  }
+
+  .max-md\:flex-col {
+    flex-direction: column;
+  }
+
+  .max-md\:justify-between {
+    justify-content: space-between;
+  }
+
+  .max-md\:gap-y-2 {
+    row-gap: 0.5rem;
+  }
+
+  .max-md\:gap-y-4 {
+    row-gap: 1rem;
+  }
+
+  .max-md\:gap-y-6 {
+    row-gap: 1.5rem;
+  }
+}

@@ -26,9 +26,9 @@
                 Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga. Pregigt primasofi dede facebooka: förutom
                 tivaligt. Fejkade
             </p>
-            <div class="flex gap-x-6 justify-center pt-[16px]">
+            <div class="flex gap-x-6 justify-center pt-[16px] max-md:flex-col max-md:gap-y-6">
                 <div
-                    class="border max-w-[229px] flex items-center manrope gap-[10px] pt-2 pb-[6px] pr-[40px] pl-4 rounded-[10px]">
+                    class="border max-w-[229px] max-md:max-w-[300px] flex items-center manrope gap-[10px] pt-2 pb-[6px] pr-[40px] pl-4 rounded-[10px]">
                     <div class="svg">
                         <img src="./src/images/svg/svg-1.svg" alt="">
                     </div>
@@ -48,7 +48,7 @@
                     </div>
                 </div>
                 <div
-                    class="border max-w-[229px] flex items-center manrope gap-[10px] pt-2 pb-[6px] pr-[40px] pl-4 rounded-[16px]">
+                    class="border max-w-[229px]  max-md:max-w-[300px] flex items-center manrope gap-[10px] pt-2 pb-[6px] pr-[40px] pl-4 rounded-[16px]">
                     <div class="svg">
                         <img src="./src/images/svg/svg-2.svg" alt="">
                     </div>
@@ -296,13 +296,22 @@
             cssEase: 'linear',
 
             responsive: [
-                {
+                   {
+                    breakpoint: 992,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 2
+                    }
+                },
+            {
                     breakpoint: 768,
                     settings: {
                         arrows: false,
                         centerMode: true,
                         centerPadding: '40px',
-                        slidesToShow: 3
+                        slidesToShow: 1
                     }
                 },
                 {
